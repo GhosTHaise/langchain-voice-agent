@@ -70,7 +70,7 @@ ${CARTESIA_TTS_SYSTEM_PROMPT}
 """
 
 agent = create_agent(
-    model="anthropic:claude-haiku-4-5",
+    model="google_genai:gemini-2.5-flash-lite",
     tools=[add_to_order, confirm_order],
     system_prompt=system_prompt,
     checkpointer=InMemorySaver(),
